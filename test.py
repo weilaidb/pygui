@@ -66,6 +66,8 @@ class Ui_Form(object):
         self.pushButton = QtWidgets.QPushButton(Form)
         self.pushButton.setGeometry(QtCore.QRect(380, 80, 75, 23))
         self.pushButton.setObjectName("pushButton")
+        self.pushButton.clicked.connect(self.test_button_click)
+
 
         self.retranslateUi(Form)
         self.toolBox.setCurrentIndex(0)
@@ -81,3 +83,7 @@ class Ui_Form(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("Form", "Tab 2"))
         self.pushButton.setText(_translate("Form", "click me"))
 
+
+
+    def test_button_click(self):
+        QtWidgets.QMessageBox.information(self.pushButton,"标题","这是第一个PyQt5 GUI程序")

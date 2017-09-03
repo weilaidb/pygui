@@ -12,6 +12,7 @@ if __name__ == '__main__':
     mainWindow = QMainWindow()
     ui = Ui_Form()
     ui.setupUi(mainWindow)
+
     mainWindow.show()
     sys.exit(app.exec_())
 
