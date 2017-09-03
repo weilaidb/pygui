@@ -69,6 +69,7 @@ class Ui_Form(object):
         self.pushButton.clicked.connect(self.test_button_click)
 
 
+
         self.retranslateUi(Form)
         self.toolBox.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(Form)
